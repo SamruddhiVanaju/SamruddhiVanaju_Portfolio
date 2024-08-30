@@ -22,7 +22,13 @@ header, footer {
     letter-spacing: 1px;
 }
 
-h1, h2, h3 {
+h1 {
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+}
+
+h2, h3 {
     color: #6a1b9a;
     font-weight: 600;
     margin: 0;

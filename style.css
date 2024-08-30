@@ -102,20 +102,22 @@ ul {
     margin: 0;
 }
 
+/* Apply styles to list items */
 ul li {
     margin: 0.5em 0;
     position: relative;
-    padding-left: 25px; /* Space for custom bullets */
-    transition: color 0.3s ease;
+    padding-left: 30px; /* Ensure enough space for custom bullets */
     line-height: 1.6;
+    font-size: 1em; /* Adjust as needed */
 }
 
+/* Custom bullets */
 ul li::before {
     content: '•'; /* Custom bullet */
     position: absolute;
-    left: 0;
-    color: #9b59b6;
-    font-size: 1.5em;
+    left: 0; /* Position bullet correctly */
+    color: #9b59b6; /* Custom color */
+    font-size: 1.5em; /* Adjust size */
     line-height: 1; /* Align bullet with text */
 }
 

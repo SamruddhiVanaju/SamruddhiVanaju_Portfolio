@@ -1,37 +1,87 @@
+/* Base Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    background: linear-gradient(to right, #8e44ad, #9b59b6);
 }
 
+/* Header and Footer Styles */
 header, footer {
-    background: #333;
+    background: linear-gradient(135deg, #6a1b9a, #8e44ad);
     color: #fff;
-    padding: 1em 0;
+    padding: 1.5em 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: #fff;
 }
 
+/* Section Styles */
 section {
-    margin: 1em 2em;
-    padding: 1em;
+    margin: 1.5em 2em;
+    padding: 2em;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* List Styles */
 ul {
-    list-style-type: square;
+    list-style-type: disc;
     margin-left: 20px;
 }
 
+ul li {
+    margin: 0.5em 0;
+}
+
+/* Link Styles */
 a {
-    color: #0066cc;
+    color: #6a1b9a;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #9b59b6;
+}
+
+/* Button Styles (if needed) */
+button {
+    background: #8e44ad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #9b59b6;
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    section {
+        margin: 1em;
+        padding: 1.5em;
+    }
+
+    header, footer {
+        padding: 1em 0;
+    }
 }

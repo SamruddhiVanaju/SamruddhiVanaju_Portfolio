@@ -96,23 +96,27 @@ section:hover::before {
 }
 
 /* Adding subtle transitions to list items */
+ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0;
+}
+
 ul li {
     margin: 0.5em 0;
     position: relative;
-    padding-left: 25px;
+    padding-left: 25px; /* Space for custom bullets */
     transition: color 0.3s ease;
-}
-
-ul li:hover {
-    color: #9b59b6;
+    line-height: 1.6;
 }
 
 ul li::before {
-    content: '•';
+    content: '•'; /* Custom bullet */
     position: absolute;
     left: 0;
     color: #9b59b6;
     font-size: 1.5em;
+    line-height: 1; /* Align bullet with text */
 }
 
 /* Link Styles */

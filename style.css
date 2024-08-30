@@ -9,6 +9,7 @@ body {
     padding: 0;
     background: linear-gradient(to right, #6a1b9a, #9b59b6);
     color: #333;
+    scroll-behavior: smooth;
 }
 
 /* Header and Footer Styles */
@@ -21,12 +22,30 @@ header, footer {
     letter-spacing: 1px;
 }
 
-h1, h2, h3 {
-    color: #333;
-    font-weight: 600;
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    margin: 0.5em 0;
+}
+
+footer p {
+    font-size: 0.9em;
     margin: 0;
-    position: relative;
-    display: inline-block;
+}
+
+/* Header Link Styles */
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #9b59b6;
 }
 
 /* Adding underline effect on hover */
@@ -39,7 +58,6 @@ h1:hover::after, h2:hover::after, h3:hover::after {
     bottom: -5px;
     left: 0;
     transition: width 0.3s ease-in-out;
-    width: 100%;
 }
 
 /* Section Styles */
@@ -75,20 +93,18 @@ section::before {
 
 section:hover::before {
     opacity: 1;
-    background: linear-gradient(90deg, transparent, #9b59b6, transparent);
 }
 
-/* List Styles */
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 20px;
-}
-
+/* Adding subtle transitions to list items */
 ul li {
     margin: 0.5em 0;
     position: relative;
-    padding-left: 15px;
+    padding-left: 25px;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #9b59b6;
 }
 
 ul li::before {
@@ -104,29 +120,13 @@ a {
     color: #6a1b9a;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
     position: relative;
 }
 
-a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: #9b59b6;
-    left: 0;
-    bottom: -3px;
-    transition: width 0.3s ease;
-}
-
-a:hover::after {
-    width: 100%;
-}
-
-/* Footer Style */
-footer p {
-    font-size: 0.9em;
-    margin: 0;
+a:hover {
+    color: #9b59b6;
+    border-bottom: 2px solid #9b59b6;
 }
 
 /* Responsive Media Query */

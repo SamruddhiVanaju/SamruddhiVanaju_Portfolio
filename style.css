@@ -15,7 +15,7 @@ body {
 /* Header and Footer Styles */
 header, footer {
     background: #6a1b9a;
-    color: #333;
+    color: #fff;
     padding: 1.5em 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

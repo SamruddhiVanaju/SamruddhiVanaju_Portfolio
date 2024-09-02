@@ -27,6 +27,10 @@ header h1 {
     margin-bottom: 0.5em;
 }
 
+h2{
+    color: #0f0f0f;
+}
+
 header p {
     margin: 0.5em 0;
 }

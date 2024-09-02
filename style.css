@@ -185,7 +185,7 @@ div.item {
 div.item img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ensures the image scales within the item without stretching */
+    object-fit: cover; /* Ensures the image scales within the item without stretching */
     object-position: center; /* Centers the image within the item */
 }
 

@@ -183,8 +183,8 @@ div.item {
 }
 
 div.item img {
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 90%;
     object-fit: contain; /* Ensures the image scales within the item without stretching */
     object-position: center; /* Centers the image within the item */
 }

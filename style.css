@@ -156,13 +156,13 @@ a:hover {
 /* Carousel  */
 .imgCar {
     height: 600px;
-    margin: 0 auto; /* Centering the carousel container horizontally */
+    margin: 0 auto;
     display: grid;
     grid-template-rows: 500px 100px;
     grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
     align-items: center;
     justify-items: center;
-    /*max-width: 100vw;  Ensuring the container doesn't exceed the viewport width */
+    max-width: 100vw;
 }
 
 main#carousel {
@@ -180,7 +180,6 @@ main#carousel {
     --middle: 3;
     --position: 1;
     pointer-events: none;
-    margin: 0 auto; /* Centering the carousel */
 }
 
 div.item {
@@ -194,9 +193,11 @@ div.item {
     transform: rotateY(calc(-10deg * var(--r)))
         translateX(calc(-300px * var(--r)));
     z-index: calc((var(--position) - var(--abs)));
-    left: 50%; /* Position item in the center */
-    transform: translateX(-50%); /* Adjust to center */
+    left: 50%;
+    transform: translateX(-50%) rotateY(calc(-10deg * var(--r))) 
+        translateX(calc(-300px * var(--r)));
 }
+
 
 
 div.item:nth-of-type(1) {

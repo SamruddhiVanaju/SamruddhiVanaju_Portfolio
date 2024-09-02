@@ -184,19 +184,26 @@ main#carousel {
 
 div.item {
     position: absolute;
-    width: 300px;
-    height: 400px;
-    background-color: coral;
+    width: 1280px; /* Set to match your image width */
+    height: 580px; /* Set to match your image height */
     --r: calc(var(--position) - var(--offset));
     --abs: max(calc(var(--r) * -1), var(--r));
     transition: all 0.25s linear;
     transform: rotateY(calc(-10deg * var(--r)))
-        translateX(calc(-300px * var(--r)));
+        translateX(calc(-1280px * var(--r)));
     z-index: calc((var(--position) - var(--abs)));
     left: 50%;
     transform: translateX(-50%) rotateY(calc(-10deg * var(--r))) 
-        translateX(calc(-300px * var(--r)));
+        translateX(calc(-1280px * var(--r)));
+    overflow: hidden;
 }
+
+div.item img {
+    width: 100%; /* Ensures the image fills the width of the item */
+    height: 100%; /* Ensures the image fills the height of the item */
+    object-fit: cover; /* Ensures the image scales correctly within the item */
+}
+
 
 
 

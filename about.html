@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samruddhi Vanaju | Resume</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Center image within section and add white border */
+section {
+    position: relative;
+    width: 100%;
+    padding: 20px; /* Adjust based on your layout needs */
+    text-align: center; /* Center text within section */
+    background-color: #f5f5f5; /* Optional background color for contrast */
+}
+
+.image-container {
+    display: inline-block; /* Allows image container to fit content width */
+    border: 10px solid #fff; /* Thick white border */
+    padding: 5px; /* Optional padding around the border */
+    background-color: #f5f5f5; /* Matches section background for seamless look */
+    border-radius: 50%; /* Creates circular shape */
+    overflow: hidden; /* Ensures image fits within the circular container */
+    width: 200px; /* Fixed width for the circular image, adjust as needed */
+    height: 200px; /* Fixed height matching width */
+    margin: 20px 0; /* Adds spacing around image container */
+}
+
+.image-container img {
+    display: block; /* Removes default inline spacing */
+    width: 100%; /* Ensures image covers the container */
+    height: 100%; /* Ensures image covers the container */
+    object-fit: cover; /* Ensures the image covers the entire container without distortion */
+}
+
+    </style>
 </head>
 <body>
 
@@ -20,6 +50,10 @@
     </header>
     
 <section id="projects">
+    <div class="image-container">
+        <img src="img/Samruddhi_Vanaju.jpg" alt="Descriptive Alt Text">
+    </div>
+    <br>
     <h2><b>Hello!! I am <i>Samruddhi Vanaju</i></b></h2><br>
        <p><b> My journey into the world of software development began with a simple curiosity about how things work. 
     This curiosity quickly evolved into a passion for building and creating, leading me to pursue a career in Information Technology.<br>
